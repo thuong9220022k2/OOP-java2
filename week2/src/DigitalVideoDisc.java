@@ -1,3 +1,4 @@
+package lab2;
 
 public class DigitalVideoDisc {
 	private String tilte;
@@ -5,6 +6,7 @@ public class DigitalVideoDisc {
 	private String director;
 	private int length;
 	private float cost;
+	//private static int nbDigitalVideoDisc = 0;
 	public String getTilte() {
 		return tilte;
 	}
@@ -45,6 +47,15 @@ public class DigitalVideoDisc {
 	public float getCost() {
 		return cost;
 	}
+	public void setTilte(String tilte) {
+		this.tilte = tilte;
+	}
+	@Override
+	public String toString() {
+		return "DigitalVideoDisc [tilte=" + tilte + ", category=" + category + ", director=" + director + ", length="
+				+ length + ", cost=" + cost + "]";
+	}
+	
 	
 
 }
